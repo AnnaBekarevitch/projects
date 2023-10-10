@@ -1,0 +1,195 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --green-color: green;
+    color: var(--black-color);
+    font-size: 16px;
+    font-family: helvetica neue,Helvetica,Arial,sans-serif;
+}
+
+a {
+    color: darkblue;
+} 
+
+html {
+    padding: 1rem;
+    min-width: 600px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+header nav {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 0.25rem;
+    margin-top: 1rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.middle {
+    margin-top: 1rem;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+aside section {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+aside section .header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→";
+}
+
+aside section .body {
+    padding: 1rem;
+}
+
+aside section .footer {
+    border-top: 1px solid var(--border-color);
+    overflow: auto;
+    padding: 0.25rem;
+}
+
+aside section .footer a {
+    float: right;
+    font-size: 0.75rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+.middle main article .footer .left {
+    float: left;
+    display: inline-flex;
+    margin-left: auto;
+}
+
+.middle main article .footer .left .positive-score {
+    color: var(--green-color);
+    font-family: verdana,arial,sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;   
+}
+
+.middle main article .footer .right {
+    float: right;
+    display: inline-flex;
+    margin-left: auto;
+}
+
+
+.middle main article .footer .right img {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.middle main article .footer {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.middle main article .title {
+    color: var(--caption-color);
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.middle main article .information {
+    position: relative;
+    text-decoration: none;
+    color: var(--border-color);
+}
+
+.middle main article .body { 
+    border-left: 4px solid var(--border-color);
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+.middle main article .attachment li  {
+    list-style-image: url(../img/paperclip-16x16.png);
+    color: var(--border-color);  
+    margin-left: -0.5rem;
+}
+
+
+
